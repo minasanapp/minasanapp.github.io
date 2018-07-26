@@ -37,7 +37,7 @@
 #content-main{
     height: max-content;
     border-radius: 4px;
-    background: #ffffffe8;
+    background-color: #ffffffe8;
     display: flex;
     justify-content: center;
     flex-direction: column;
