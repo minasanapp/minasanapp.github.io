@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Meta Tag -->
+    <title>Minasan - Anime Wallpapers</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Download latest Minasan app for Android now! Explore a wide range of quality anime themed wallpapers on your phone with Minasan for free. "
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <meta property="og:site_name" content="minasan app" />
+    <meta property="og:title" content="Minasan - Anime Wallpapers" />
+    <meta property="og:description" content="Download latest Minasan app for Android now!" />
+    <meta property="og:url" content="https://minasanapp.github.io" />
+    <meta property="og:image" content="https://minasanapp.github.io/assets/img/icon.png" />
+
+    <!-- Local Resources -->
+    <link rel="icon" href="./assets/img/icon.png">
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <script defer src="./assets/js/index.js"></script>
+
+    <!-- Remote Resources -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="./assets/css/material.min.css">
+    <script defer src="./assets/js/material.min.js"></script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-64243736-9"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-64243736-9');
+    </script>
+
+</head>
+
+<body onload="apiFetch('minasan')">
+    <div class="demo-layout-transparent mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <header class="mdl-layout__header mdl-layout__header--transparent">
+            <div class="mdl-layout__header-row">
+                <span class="mdl-layout-title">Minasan - Anime Wallpapers</span>
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="https://github.com/minasanapp">GitHub</a>
+                </nav>
+            </div>
+        </header>
+        <div class="mdl-layout__drawer">
+            <span class="mdl-layout-title">MINASAN</span>
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="https://github.com/minasanapp">GitHub</a>
+            </nav>
+        </div>
+        <main class="mdl-layout__content">
+            <div id="content-main">
+                <div id="p2" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
+                <img src="./assets/img/icon.png">
+                <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+                    <div class="mdl-tabs__tab-bar">
+                        <a href="#minasan" class="mdl-tabs__tab is-active" onclick="apiFetch('minasan')">MINASAN</a>
+                        <a href="#minasan2" class="mdl-tabs__tab" onclick="apiFetch('minasan2')">MINASAN 2</a>
+                    </div>
+
+                    <div class="mdl-tabs__panel is-active" id="minasan">
+                        <div class="content-main-tab">
+                            <div id="fetch-status"></div>
+                            <button id="appdl" class="mdl-button mdl-js-button mdl-js-ripple-effect" disabled>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="mdl-tabs__panel" id="minasan2">
+                        <div class="content-main-tab">
+                            <div id="fetch-status-2"></div>
+                            <button id="appdl-2" class="mdl-button mdl-js-button mdl-js-ripple-effect" disabled>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

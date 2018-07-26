@@ -1,0 +1,60 @@
+
+/* ----------------- */
+/*     getmdl.io     */
+/* ----------------- */
+.demo-layout-transparent {
+    background: url('../img/background.jpg') 57% / cover;
+}
+
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+    /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+    color: white;
+}
+
+.mdl-layout__content, .mdl-layout__header-row{
+    background: #00000045;
+}
+
+.mdl-layout__content{
+    display: inline-flex !important;
+    justify-content: center;
+}
+
+.mdl-progress{
+    width: -webkit-fill-available !important;
+    opacity: 0;
+}
+
+.mdl-tabs__panel {
+    padding: 10px;
+}
+
+/* ----------------- */
+/*      User CSS     */
+/* ----------------- */
+#content-main{
+    height: max-content;
+    border-radius: 4px;
+    background: #ffffffe8;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+#content-main img{
+    padding: 40px;
+}
+
+.content-main-tab{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#fetch-status, #fetch-status-2{
+    padding: 14px 0px;
+}
