@@ -55,6 +55,7 @@ function fetchBuffer(cond) {
         document.getElementById('appdl-2').innerHTML = 'Fetching latest release';
         document.getElementById('appdl-2').setAttribute('disabled', '');
     }
+    componentHandler.upgradeAllRegistered();
 }
 
 function fetchInject(cond, cond1, cond2) {
@@ -72,6 +73,7 @@ function fetchInject(cond, cond1, cond2) {
         document.getElementById('appdl-2').removeAttribute('disabled');
         document.getElementById('appdl-2').setAttribute('onclick', 'window.open("' + cond1 + '","_self")');
     }
+    componentHandler.upgradeAllRegistered();
 }
 
 function fetchFailed(cond) {
@@ -81,6 +83,7 @@ function fetchFailed(cond) {
     } else if (cond == 'minasan2') {
         document.getElementById('appdl-2').innerHTML = 'Fetch Failed';
     }
+    componentHandler.upgradeAllRegistered();
 }
 
 
